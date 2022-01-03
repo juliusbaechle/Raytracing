@@ -1,48 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="OwnMath.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Float3D.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PixMap.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Color.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="OwnMath.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Float3D.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Fragment.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitive.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="PixMap.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Display">
+      <UniqueIdentifier>{aaa18fc3-a746-4f2f-aede-5af99c1cbdb2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="Base">
+      <UniqueIdentifier>{421d0a82-fb65-4c72-a1b1-beda67d85f1b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{29f33bc5-bf70-4c7c-b370-c66eea6b0489}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="Raytracing.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
-    <QtUic Include="Raytracing.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtMoc Include="Raytracing.h">
-      <Filter>Header Files</Filter>
+    <QtMoc Include="ThreadedPainter.h">
+      <Filter>Display</Filter>
     </QtMoc>
-    <ClCompile Include="Raytracing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ResourceCompile Include="$pro_name$.rc">
-    </ResourceCompile>
-    <None Include="$pro_name$.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="$pro_name$.def">
-      <Filter>Resource Files</Filter>
-    </None>
-
   </ItemGroup>
 </Project>
